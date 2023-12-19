@@ -1,4 +1,4 @@
-package com.example.eureka;
+package com.example.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,13 +8,13 @@ import java.net.InetAddress;
 
 @SpringBootApplication
 @EnableEurekaServer
-public class EurekaApplication {
+public class AccountApplication {
 
 
 	public static void main(String[] args) {
 		String ip = InetAddress.getLoopbackAddress().getHostAddress();
 		System.out.println("ip: " + ip);
-		SpringApplication.run(EurekaApplication.class, args);
+		SpringApplication.run(AccountApplication.class, args);
 	}
 
 }
